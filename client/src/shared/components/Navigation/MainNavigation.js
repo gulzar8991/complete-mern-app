@@ -1,10 +1,12 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import MainHeader from './MainHeader';
-import './MainNavigation.css';
+import MainHeader from "./MainHeader";
+import NavLinks from "./NavLinks";
 
-const MainNavigation = props => {
+import "./MainNavigation.css";
+
+const MainNavigation = (props) => {
   return (
     <MainHeader>
       <button className="main-navigation__menu-btn">
@@ -16,7 +18,7 @@ const MainNavigation = props => {
         <Link to="/">YourPlaces</Link>
       </h1>
       <nav>
-        ...
+        <NavLinks />
       </nav>
     </MainHeader>
   );
